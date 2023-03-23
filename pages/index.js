@@ -31,13 +31,17 @@ export default function Home() {
                 </Link>
               </div>
               <div className={styles.right}>
-                <div className={styles.link}>Artistas</div>
-                <div className={styles.link}>Contacto</div>
+                <div className={styles.link}>
+                  <Link href="#artistas">Artistas</Link>
+                </div>
+                <div className={styles.link}>
+                  <Link href="#contacto">Contacto</Link>
+                </div>
               </div>
             </div>
           </div>
         </nav>
-        <div className={styles.header}>
+        <div className={styles.header} id="artistas">
           <div className="container">
             <div className={styles.flex}>
               <div className={styles.left}>
@@ -129,7 +133,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.contacto}>
+        <div className={styles.contacto} id="contacto">
           <div className="container">
             <div className={styles.title}>Ponte en contacto con nosotros</div>
             <div className={styles.icons}>

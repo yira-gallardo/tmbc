@@ -1,5 +1,5 @@
 .navDesktop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,6 +10,7 @@
 .navDesktop .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navDesktop .left {
   width: 25%;
@@ -28,7 +29,6 @@
   width: 100%;
   height: auto;
 }
-
 .navDesktop .link {
   display: inline-block;
   color: black;
@@ -38,6 +38,7 @@
   cursor: pointer;
   text-align: right;
 }
+
 .header .flex {
   display: flex;
 }
@@ -61,10 +62,12 @@
   padding: 0.7em 0;
   text-align: left;
 }
-
 .header .left {
   width: 35%;
   padding-right: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .header .right {
   width: 65%;
@@ -107,6 +110,7 @@
   font-size: 0.8em;
   font-style: italic;
 }
+
 .contacto {
   min-height: 60vh;
   display: flex;
@@ -138,8 +142,124 @@
   cursor: pointer;
 }
 .footer {
-  font-size: 0.8em;
-  text-align: left;
-  display: flex;
-  padding-left: 70px;
+  font-size: 1em;
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navDesktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    z-index: 999;
+  }
+  .navDesktop .left {
+    width: 25%;
+  }
+  .navDesktop .right {
+    width: 75%;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: right;
+  }
+  .navDesktop .logo {
+    width: 100px;
+    position: relative;
+  }
+  .navDesktop .logoImg {
+    width: 100%;
+    height: auto;
+  }
+  .navDesktop .link {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 0.6em;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  .header .flex {
+    display: block;
+  }
+  .header {
+    display: block;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  .header .left {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header .right {
+    width: 100%;
+  }
+  .header .artists img {
+    width: 100px;
+    height: 700px;
+    background-position: center;
+  }
+  .header .artists {
+    display: block;
+    column-gap: 2%;
+  }
+  .header .artist {
+    width: 100%;
+    transition-duration: 0.2s;
+  }
+  .header .artistBox {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .header .artist .name {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 900;
+    max-width: 100px;
+  }
+  .header .artist:hover {
+    width: 50%;
+    transition-duration: 0.1s;
+  }
+  .header .artist .link {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-style: italic;
+  }
+
+  .contacto {
+    min-height: 60vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contacto .title {
+    font-family: tmbc-bold;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+  .footer {
+    font-size: 0.6em;
+    text-align: center;
+    padding: 40px 0;
+  }
 }
