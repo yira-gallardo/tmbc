@@ -43,6 +43,7 @@
   display: flex;
 }
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -145,6 +146,86 @@
   font-size: 1em;
   text-align: center;
   padding: 40px 0;
+}
+
+.circles {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  right: 700px;
+  /* background-color: #aaa; */
+  opacity: 0.8;
+  z-index: -1;
+}
+.circles .circle1 {
+  position: absolute;
+  background-color: rgb(211, 0, 67);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(45px);
+  animation: circleMove1 5s infinite;
+}
+.circles .circle2 {
+  position: absolute;
+  left: 100px;
+  background-color: rgb(119, 11, 207);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(45px);
+  animation: circleMove2 5s infinite;
+}
+.circles .circle3 {
+  position: absolute;
+  left: 200px;
+  background-color: rgb(13, 25, 189);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(45px);
+  animation: circleMove3 5s infinite;
+}
+
+@keyframes circleMove1 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 200px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes circleMove2 {
+  0% {
+    top: 0;
+    left: 200px;
+  }
+  50% {
+    top: 100px;
+    left: 200px;
+  }
+  100% {
+    top: 0;
+    left: 200px;
+  }
+}
+@keyframes circleMove3 {
+  0% {
+    top: 0;
+    left: 300px;
+  }
+  50% {
+    top: -100px;
+    left: 300px;
+  }
+  100% {
+    top: 0;
+    left: 300px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {

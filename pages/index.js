@@ -132,6 +132,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.circles}>
+            <div className={styles.circle1} />
+            <div className={styles.circle2} />
+            <div className={styles.circle3} />
+          </div>
         </div>
         <div className={styles.contacto} id="contacto">
           <div className="container">
