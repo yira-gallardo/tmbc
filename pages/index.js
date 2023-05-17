@@ -57,10 +57,6 @@ export default function Home() {
                     />
                   </div>
                 </Link>
-                <div className={styles.bioBox}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
               </div>
               <div className={styles.right}>
                 <div className={styles.artists}>
@@ -80,22 +76,7 @@ export default function Home() {
                       </div>
                     </Link>
                   </div>
-                  <div className={styles.artist}>
-                    <Link
-                      href="https://molotov-two.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <div
-                        className={styles.artistBox}
-                        style={{ backgroundImage: "url(img/artist-2.jpg)" }}
-                      >
-                        <div className={styles.content}>
-                          <div className={styles.name}>Molotov</div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
+
                   <div className={styles.artist}>
                     <Link
                       href="https://www.instagram.com/mariobautista/?hl=es"
