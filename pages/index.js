@@ -156,7 +156,7 @@ export default function Home() {
             </div>
 
             <div className={styles.mail}>
-              <Link href="mailto:themusicbusinesscompany@gmail.com">
+              <Link href="mailto:contacto@themusicbusinesscompany.com">
                 <button>CONTACTO</button>
               </Link>
             </div>
