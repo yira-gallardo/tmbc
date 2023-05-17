@@ -62,7 +62,7 @@ export default function Home() {
                 <div className={styles.artists}>
                   <div className={styles.artist}>
                     <Link
-                      href="https://danna-paola.vercel.app/"
+                      href="https://www.instagram.com/dannapaola/"
                       target="_blank"
                       rel="noreferrer"
                     >
